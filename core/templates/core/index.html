@@ -1,0 +1,126 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Nazim N Nazar</title>
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/unicons.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/tooplate-style.css' %}">
+    </head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="/"><i class='uil uil-user'></i> Nazim</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="{% url 'project' %}" class="nav-link"><span data-hover="Projects">Projects</span></a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="navbar-nav ml-lg-auto">
+                <div class="ml-lg-4">
+                    <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                        <i class="color-mode-icon"></i>
+                        Color mode
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    {% block content %}
+    {% endblock %}
+    <section class="project py-5" id="project">
+        <div class="container">   
+            <div class="row">
+                <div class="col-lg-11 text-center mx-auto col-12">
+                    <div class="col-lg-8 mx-auto">
+                        <h1 class="animated animated-text">
+                            <span class="mr-2">Hey folks, I'm</span>
+                            <div class="animated-info">
+                                <span class="animated-item">Software Developer</span>
+                                <span class="animated-item">Web Designer</span>
+                                <span class="animated-item">Backend Developer</span>
+                            </div>
+                        </h1>
+                    </div>
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="project-info">
+                                <img src="{% static 'images/project/nazimn.png' %}" class="img-fluid" alt="project image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                  <h2 class="mb-4">Experiences</h2>
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>2019</span>
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Project Manager</span><small>Best Studio</small></h3>
+                                  <p>Proin ornare non purus ut rutrum. Nulla facilisi. Aliquam laoreet libero ac pharetra feugiat. Cras ac fermentum nunc, a faucibus nunc.</p>
+                             </div>
+                        </div>
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2018</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>UX Designer</span><small>Digital Ace</small></h3>
+                                <p>Fusce rutrum augue id orci rhoncus molestie. Nunc auctor dignissim lacus vel iaculis.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2016</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>UI Freelancer</h3>
+                                <p>Sed fringilla vitae enim sit amet cursus. Sed cursus dictum tortor quis pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2014</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Junior Designer<small>Crafted Co.</small></h3>
+                                <p>Cras scelerisque scelerisque condimentum. Nullam at volutpat mi. Nunc auctor ipsum eget magna consequat viverra.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/Headroom.js' %}"></script>
+    <script src="{% static 'js/jQuery.headroom.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/smoothscroll.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+</body>
+</html>
